@@ -1,5 +1,9 @@
 require 'sinatra'
 
+get '/template' do
+	erb :index
+end
+
 get '/piglatin/:word' do
 	@word = params[:word]
 
